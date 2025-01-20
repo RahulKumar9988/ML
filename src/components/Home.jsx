@@ -9,14 +9,14 @@ function Home() {
     <div className=' flex text-white w-full h-40 justify-center items-center sticky'>
         <p className='text-6xl'>Motor fault <br /><span className='text-green-600'>Detector</span></p>
         <div className='flex-col text-black ml-14'>
-        <input className='gap-10 w-2/3 h-16 rounded-md text-center' type="text" onChange={(e)=>{
+        <input className='gap-10 w-2/3 h-16 rounded-md text-center' type="text" placeholder='Power' onChange={(e)=>{
         setPower(e.target.value)
     }}/>
         <br />
-        <input className='gap-10 mt-6 w-2/3 h-16 rounded-md text-center' type="text"  onChange={(e)=>{
+        <input className='gap-10 mt-6 w-2/3 h-16 rounded-md text-center' type="text" placeholder='Current' onChange={(e)=>{
         setCurrent(e.target.value)}}/>
         <br />
-        <input className='gap-10 mt-6 w-2/3 h-16 rounded-md text-center' type="text" onChange={(e)=>{
+        <input className='gap-10 mt-6 w-2/3 h-16 rounded-md text-center' type="text" placeholder='Temperature' onChange={(e)=>{
         setTemperature(e.target.value)
     }}/>
 
