@@ -35,7 +35,7 @@ function Home() {
             setAnswer(data)
         }}>predict</button>
          
-         {answer?<div><h1 className='text-red-700 text-3xl font-bold text-wrap'> Fault found</h1></div>:<div><h1 className='text-green-700 text-3xl font-bold text-wrap'>fault not found</h1></div>}
+         {answer.length==0?<div></div>:answer?<h1 className='text-red-700 text-3xl font-bold text-wrap'> Fault found</h1>:<div><h1 className='text-green-700 text-3xl font-bold text-wrap'>fault not found</h1></div>}
         
        </div>
   )
