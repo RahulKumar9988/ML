@@ -47,7 +47,7 @@ function Home() {
           fb.append("power", power);
           fb.append("current", current);
           fb.append("temprature", temprature);
-          var resp = await fetch("/pred", {
+          var resp = await fetch("/pred/", {
             method: "POST",
             body: fb,
           });
